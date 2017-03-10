@@ -1,8 +1,12 @@
+<h4>Usage</h4>
+
 Copy everything in the HamWork.txt file into your imperial Java program, done.
 
 
 <h1>Documentation</h1>
+
 hamwork
+__________________________________________________________________________________
         _go()
 __________________________________________________________________________________
         _next()
@@ -40,5 +44,6 @@ ________________________________________________________________________________
                     _check(int direction)
                     _strafe(int direction)
 __________________________________________________________________________________
-        _x_<extension name>
-        
+        hamwork_x_<extension name>
+        (for example hamwork_x_follow_wall_right())
+
