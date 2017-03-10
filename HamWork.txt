@@ -177,21 +177,21 @@ void hamwork_relative_turn_front() {}
 //_strafe
 void hamwork_relative_strafe_left() {
     hamwork_relative_turn_left();
-    go();
+    hamwork_go();;
     hamwork_relative_turn_right();
 }
 void hamwork_relative_strafe_right() {
     hamwork_relative_turn_right();
-    go();
+    hamwork_go();;
     hamwork_relative_turn_left();
 }
 void hamwork_relative_strafe_back() {
     hamwork_relative_turn_back();
-    go();
+    hamwork_go();;
     hamwork_relative_turn_back();
 }
-void hamwork_relative_strafe_front() { //the same as go();
-    go();
+void hamwork_relative_strafe_front() { //the same as hamwork_go();;
+    hamwork_go();;
 }
 //_check
 //these return 1 for free and 0 for blocked
@@ -250,7 +250,7 @@ void hamwork_direct_turn(int input) {
 void hamwork_direct_strafe(int input) {
     int tempSave = z;
     hamwork_direct_turn(input);
-    go();
+    hamwork_go();
     hamwork_direct_turn(tempSave);
 }
 //_check(direction)
