@@ -177,21 +177,21 @@ void hamwork_relative_turn_front() {}
 //_strafe
 void hamwork_relative_strafe_left() {
     hamwork_relative_turn_left();
-    hamwork_go();;
+    hamwork_go();
     hamwork_relative_turn_right();
 }
 void hamwork_relative_strafe_right() {
     hamwork_relative_turn_right();
-    hamwork_go();;
+    hamwork_go();
     hamwork_relative_turn_left();
 }
 void hamwork_relative_strafe_back() {
     hamwork_relative_turn_back();
-    hamwork_go();;
+    hamwork_go();
     hamwork_relative_turn_back();
 }
-void hamwork_relative_strafe_front() { //the same as hamwork_go();;
-    hamwork_go();;
+void hamwork_relative_strafe_front() { //the same as hamwork_go();
+    hamwork_go();
 }
 //_check
 //these return 1 for free and 0 for blocked
@@ -261,6 +261,13 @@ int hamwork_direct_check(int input) {
     hamwork_direct_turn(tempSave);
     return result;
 }
+//HAMWORK REGION END//
+
+//HAMWORK REGION: EXTENSIONS//
+//Extensions are accessed via hamwork_x_<name> (x standing for extension, obviously)
+//PUT ANY EXTENSIONS BETWEEN HERE
+
+//AND HERE (Extension END)
 //HAMWORK REGION END//
 
 void ENDMARKER() {
