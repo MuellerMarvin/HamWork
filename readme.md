@@ -1,6 +1,6 @@
 <h4>Usage</h4>
 
-Copy everything in the HamWork.txt file into your imperial Java program, done.
+Copy everything in the HamWork.txt file into your imperial Java program inside the "Hamster Simulator" - done.
 
 
 <h1>Documentation</h1>
